@@ -1,0 +1,15 @@
+D:\PortalSystem\CoreInfrastructure\bin\Debug\net8.0\CoreInfrastructure.deps.json
+D:\PortalSystem\CoreInfrastructure\bin\Debug\net8.0\CoreInfrastructure.dll
+D:\PortalSystem\CoreInfrastructure\bin\Debug\net8.0\CoreInfrastructure.pdb
+D:\PortalSystem\CoreInfrastructure\bin\Debug\net8.0\DomainEntities.dll
+D:\PortalSystem\CoreInfrastructure\bin\Debug\net8.0\DomainEntities.pdb
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.csproj.AssemblyReference.cache
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.AssemblyInfoInputs.cache
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.AssemblyInfo.cs
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.csproj.CoreCompileInputs.cache
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfr.870B1DB0.Up2Date
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.dll
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\refint\CoreInfrastructure.dll
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.pdb
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\ref\CoreInfrastructure.dll

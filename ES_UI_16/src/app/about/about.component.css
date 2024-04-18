@@ -1,0 +1,20 @@
+.display {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+}
+p {
+    font-size: 20px;
+}
+h4 {
+    font-weight: 800;
+    font-size: 22px;
+    color: #c51f5d;
+}
+ul li
+{
+    font-size: large;
+}

@@ -1,0 +1,44 @@
+.display {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    text-align: center; /* Center text */
+    line-height: 1.5; /* Adjust line spacing */
+}
+
+h1 {
+    font-size: 44px;
+    font-weight: bolder;
+    color: #c51f5d;
+    margin-bottom: 10px; /* Add margin below */
+}
+
+h2 {
+    color: #e2e2d2;
+    margin-bottom: 10px; /* Add margin below */
+}
+
+Address {
+    font-size: 18px;
+    margin-bottom: 10px; /* Add margin below */
+}
+
+a {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff9800;
+    animation: blink 1s infinite alternate; /* Apply animation */
+    margin-top: 10px; /* Add margin above */
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}

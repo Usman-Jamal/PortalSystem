@@ -1,0 +1,44 @@
+<div class="container">
+    <h1>{{showButton ? 'Admin Details' : 'Student Details'}}</h1>
+    <form (submit)="saveStudent()">
+        <div class="inputfield" *ngIf="showButton">
+            <mat-form-field>
+                <input matInput placeholder="Email" [(ngModel)]="student.email" name="email" required>
+            </mat-form-field>
+        </div>
+        <div class="inputfield" *ngIf="showButton">
+            <mat-form-field>
+                <input matInput placeholder="Password" [(ngModel)]="student.password" name="password" required>
+            </mat-form-field>
+        </div>
+        <div class="inputfield">
+            <mat-form-field>
+                <input matInput placeholder="Name" [(ngModel)]="student.name" name="Name" required>
+            </mat-form-field>
+        </div>
+        <div class="inputfield">
+            <mat-form-field>
+                <input matInput placeholder="Address" [(ngModel)]="student.address" name="address" required>
+            </mat-form-field>
+        </div>
+        <div class="inputfield">
+            <mat-form-field>
+                <input matInput placeholder="Contact" [(ngModel)]="student.contact" name="contact" required>
+            </mat-form-field>
+        </div>
+        <div class="inputfield">
+            <mat-form-field>
+                <mat-select [(value)]="student.gender" placeholder="Select Gender" required>
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                    <mat-option value="Other">Other</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <input type="hidden" [(ngModel)]="student.userType" name="usertype">
+        <div class="buttons">
+            <button mat-raised-button color="Secondary" [routerLink]="['/manage-student']">Cancel</button>
+            <button mat-raised-button color="primary" type="submit">Save</button>
+        </div>
+    </form>
+</div>

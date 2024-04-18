@@ -1,0 +1,7 @@
+img {
+    width: 100%; /* Set width to 100% of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image doesn't exceed its original size */
+    max-height: 100%;
+    filter: blur(2px); /* Apply blur effect */
+}
