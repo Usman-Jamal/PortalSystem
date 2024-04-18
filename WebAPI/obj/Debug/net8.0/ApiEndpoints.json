@@ -1,0 +1,280 @@
+[
+  {
+    "ContainingType": "WebAPI.Controllers.ClassController",
+    "Method": "GetAll",
+    "RelativePath": "Class",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DomainEntities.Entities.Classes, DomainEntities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.ClassController",
+    "Method": "Add",
+    "RelativePath": "Class",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classes",
+        "Type": "DomainEntities.Entities.Classes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.ClassController",
+    "Method": "Update",
+    "RelativePath": "Class",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classes",
+        "Type": "DomainEntities.Entities.Classes",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.ClassController",
+    "Method": "Delete",
+    "RelativePath": "Class/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserController",
+    "Method": "GetAll",
+    "RelativePath": "User",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[DomainEntities.Entities.Users, DomainEntities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserController",
+    "Method": "Add",
+    "RelativePath": "User",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "users",
+        "Type": "DomainEntities.Entities.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "User",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "users",
+        "Type": "DomainEntities.Entities.Users",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "User/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserEnrollmentController",
+    "Method": "GetUserByClassId",
+    "RelativePath": "UserEnrollment",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "class_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DomainEntities.Entities.Users, DomainEntities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserEnrollmentController",
+    "Method": "EnrollUser",
+    "RelativePath": "UserEnrollment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEnrollments",
+        "Type": "DomainEntities.Entities.UserEnrollments",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserEnrollmentController",
+    "Method": "DeleteEnrollment",
+    "RelativePath": "UserEnrollment",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "class_id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebAPI.Controllers.UserLoginController",
+    "Method": "UserLogin",
+    "RelativePath": "UserLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Boolean",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
