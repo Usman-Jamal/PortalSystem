@@ -11,7 +11,7 @@ namespace CoreInfrastructure
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-RF6SK1O\\SQLEXPRESS;Database=PortalSystem;TrustServerCertificate=true;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=tcp:portalsystemserver.database.windows.net,1433;Initial Catalog=PortalSystem;Persist Security Info=False;User ID=usman;Password={12abcd34A};MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
         }
     }
 }

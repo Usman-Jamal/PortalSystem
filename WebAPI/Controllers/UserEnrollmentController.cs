@@ -15,10 +15,15 @@ namespace WebAPI.Controllers
             _repository = repository;
         }
 
-        [HttpGet]
+        [HttpGet("{class_id}")]
         public List<Users> GetUserByClassId(int class_id)
         {
             return _repository.GetUserByClassId(class_id);
+        }
+        [HttpGet("{user_id}, {class_id}")]
+        public string isUserEnrolled(int user_id, int class_id)
+        {
+            return _repository.isUserEnrolled(user_id, class_id);
         }
 
         [HttpPost]
@@ -27,7 +32,7 @@ namespace WebAPI.Controllers
             _repository.EnrollUser(userEnrollments);
         }
 
-        [HttpDelete]
+        [HttpDelete("{user_id}, {class_id}")]
         public void DeleteEnrollment(int user_id, int class_id)
         {
             _repository.DeleteEnrollment(user_id, class_id);

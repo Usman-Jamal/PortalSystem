@@ -9,3 +9,4 @@ D:\PortalSystem\DomainEntities\obj\Debug\net8.0\DomainEntities.dll
 D:\PortalSystem\DomainEntities\obj\Debug\net8.0\refint\DomainEntities.dll
 D:\PortalSystem\DomainEntities\obj\Debug\net8.0\DomainEntities.pdb
 D:\PortalSystem\DomainEntities\obj\Debug\net8.0\ref\DomainEntities.dll
+D:\PortalSystem\DomainEntities\obj\Debug\net8.0\DomainEntities.sourcelink.json

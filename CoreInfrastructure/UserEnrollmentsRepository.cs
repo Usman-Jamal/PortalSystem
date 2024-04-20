@@ -55,6 +55,21 @@ namespace CoreInfrastructure
                 }
             }
         }
+        public string isUserEnrolled(int user_id, int class_id)
+        {
+            using (PortalSystemContext portalSystemContext = new PortalSystemContext())
+            {
+                var existingEntry = portalSystemContext.UserEnrollments.FirstOrDefault(x => x.User_Id == user_id && x.Class_Id == class_id);
+                if (existingEntry != null)
+                {
+                    return existingEntry.EnrolledStatus;
+                }
+                else
+                {
+                    return "Not Enrolled";
+                }
+            }
+        }
         public List<Users> GetUserByClassId(int class_id)
         {
             using (PortalSystemContext portalSystemContext = new PortalSystemContext())

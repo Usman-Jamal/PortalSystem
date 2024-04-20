@@ -1,0 +1,49 @@
+<div class="selectPanel">
+    <label for="classStudents">Select Class</label>
+    <select id="classStudents" name="classStudents" required>
+        <option value="null" disabled selected>---Select Class---</option>
+        <ng-container *ngFor="let item of classes">
+            <option [value]="item.id">{{item.gradeLevel}}</option>
+        </ng-container>
+    </select>
+</div>
+<div class="action-buttons">
+    <button class="getStudents" (click)="getStudents()">GET ALL STUDENTS</button>
+</div>
+<div class="display">
+    <table *ngIf="!this.students || this.students.length === 0">
+        <tbody>
+            <tr>
+                <td colspan="8"><h4>No Record Found</h4></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Conact</th>
+                <th>Gender</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of this.students let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.password}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.address}}</td>
+                <td>{{item.contact}}</td>
+                <td>{{item.gender}}</td>
+                <td class="action-buttons">
+                    <Button class="deleteButton" (click)="deleteStudent(item.id)"><span class="material-symbols-outlined"> delete </span></Button>                       
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

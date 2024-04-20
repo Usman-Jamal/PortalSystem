@@ -13,3 +13,4 @@ D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.dll
 D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\refint\CoreInfrastructure.dll
 D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.pdb
 D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\ref\CoreInfrastructure.dll
+D:\PortalSystem\CoreInfrastructure\obj\Debug\net8.0\CoreInfrastructure.sourcelink.json

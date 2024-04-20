@@ -1,0 +1,33 @@
+<div class="display">
+    <table *ngIf="!this.classes || this.classes.length === 0">
+        <tbody>
+            <tr>
+                <td colspan="8"><h4>No Record Found</h4></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Grade Level</th>
+                <th>Timings</th>
+                <th>Max Class Size</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of this.classes let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{item.gradeLevel}}</td>
+                <td>{{item.timings}}</td>
+                <td>{{item.maxClassSize}}</td>
+                <td class="enroll">{{isuserEnrolled[item.id] || 'Loading...' }}</td>
+                <td class="action-buttons">
+                    <Button class="userEnrollButton" *ngIf="isuserEnrolled[item.id] !== 'Enrolled'" (click)="EnrollUser(User_Id, item.id)"><span class="material-symbols-outlined"> </span>Get Enroll</Button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

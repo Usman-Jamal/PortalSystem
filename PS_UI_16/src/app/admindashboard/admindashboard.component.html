@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div class="sidebar">
+    <header>
+      <img src="..\assets\image5.jpg" alt="logo"> 
+      <h2>Portal System</h2>
+    </header>
+    <ul>
+      <li><a routerLink="/admindashboard/dashboard"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+      <li><a routerLink="/admindashboard/manage-student"><i class="fas fa-link"></i>Manage User</a></li>
+      <li><a routerLink="/admindashboard/classes"><i class="fas fa-stream"></i>Manage Classes</a></li>
+      <li><a routerLink="/admindashboard/about"><i class="far fa-question-circle"></i>About</a></li>
+      <li><a routerLink="/admindashboard/contact"><i class="far fa-envelope"></i>Contact</a></li>
+      <li><a routerLink="/loginpage"><i class="far fa-envelope"></i>Logout</a></li>
+    </ul>
+  </div>
+  <section>
+    <router-outlet></router-outlet>
+  </section>
+</body>
+
+</html>

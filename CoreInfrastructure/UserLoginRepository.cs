@@ -11,26 +11,18 @@ namespace CoreInfrastructure
 {
     internal class UserLoginRepository : IUserLoginRepository
     {
-        public bool UserLogin(string email, string password)
+        public Users UserLogin(string email, string password)
         {
             using (PortalSystemContext portalSystemContext = new PortalSystemContext())
             {
-                var existingUser = portalSystemContext.Users.FirstOrDefault(x => x.Email == email);
+                var existingUser = portalSystemContext.Users.FirstOrDefault(x => x.Email == email && x.Password == password);
                 if (existingUser != null) 
                 {
-                    if (existingUser.Email == email && existingUser.Password == password) 
-                    { 
-                        return true;
-                    }
-                    else
-                    {
-                        return false;
-                    }
+                    return existingUser;
                 }
                 else
                 {
-                    Console.WriteLine("Invalid User");
-                    return false;
+                    return null;
                 }
             }
         }

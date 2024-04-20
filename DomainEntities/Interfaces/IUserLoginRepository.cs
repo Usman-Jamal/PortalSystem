@@ -9,6 +9,6 @@ namespace DomainEntities.Interfaces
 {
     public interface IUserLoginRepository
     {
-        bool UserLogin(string email, string password);
+        Users UserLogin(string email, string password);
     }
 }

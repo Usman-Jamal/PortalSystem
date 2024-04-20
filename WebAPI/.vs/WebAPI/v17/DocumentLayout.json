@@ -3,15 +3,7 @@
   "WorkspaceRootPath": "D:\\PortalSystem\\WebAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0B89F08-E711-4A91-B724-32DC63BA0287}|WebAPI.csproj|d:\\portalsystem\\webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B89F08-E711-4A91-B724-32DC63BA0287}|WebAPI.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0B89F08-E711-4A91-B724-32DC63BA0287}|WebAPI.csproj|d:\\portalsystem\\webapi\\controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0B89F08-E711-4A91-B724-32DC63BA0287}|WebAPI.csproj|solutionrelative:controllers\\classcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{130417BE-5054-49FF-94A2-ABBAB348B915}|..\\CoreInfrastructure\\CoreInfrastructure.csproj|d:\\portalsystem\\coreinfrastructure\\classesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{130417BE-5054-49FF-94A2-ABBAB348B915}|..\\CoreInfrastructure\\CoreInfrastructure.csproj|d:\\portalsystem\\coreinfrastructure\\portalsystemcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0B89F08-E711-4A91-B724-32DC63BA0287}|WebAPI.csproj|d:\\portalsystem\\webapi\\controllers\\userlogincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -65,65 +57,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "D:\\PortalSystem\\WebAPI\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
-              "ToolTip": "D:\\PortalSystem\\WebAPI\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Controllers\\UserController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAowCcAAAAIAAAA",
+              "Title": "PortalSystemContext.cs",
+              "DocumentMoniker": "D:\\PortalSystem\\CoreInfrastructure\\PortalSystemContext.cs",
+              "RelativeDocumentMoniker": "..\\CoreInfrastructure\\PortalSystemContext.cs",
+              "ToolTip": "D:\\PortalSystem\\CoreInfrastructure\\PortalSystemContext.cs",
+              "RelativeToolTip": "..\\CoreInfrastructure\\PortalSystemContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAC7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T12:46:12.048Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClassesRepository.cs",
-              "DocumentMoniker": "D:\\PortalSystem\\CoreInfrastructure\\ClassesRepository.cs",
-              "RelativeDocumentMoniker": "..\\CoreInfrastructure\\ClassesRepository.cs",
-              "ToolTip": "D:\\PortalSystem\\CoreInfrastructure\\ClassesRepository.cs",
-              "RelativeToolTip": "..\\CoreInfrastructure\\ClassesRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T12:51:01.969Z",
+              "WhenOpened": "2024-04-20T20:00:08.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClassController.cs",
-              "DocumentMoniker": "D:\\PortalSystem\\WebAPI\\Controllers\\ClassController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClassController.cs",
-              "ToolTip": "D:\\PortalSystem\\WebAPI\\Controllers\\ClassController.cs",
-              "RelativeToolTip": "Controllers\\ClassController.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCcAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T12:48:16.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "UserLoginController.cs",
               "DocumentMoniker": "D:\\PortalSystem\\WebAPI\\Controllers\\UserLoginController.cs",
               "RelativeDocumentMoniker": "Controllers\\UserLoginController.cs",
               "ToolTip": "D:\\PortalSystem\\WebAPI\\Controllers\\UserLoginController.cs",
               "RelativeToolTip": "Controllers\\UserLoginController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAASAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T13:01:59.106Z"
+              "WhenOpened": "2024-04-15T13:01:59.106Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "UserLoginRepository.cs",
               "DocumentMoniker": "D:\\PortalSystem\\CoreInfrastructure\\UserLoginRepository.cs",
               "RelativeDocumentMoniker": "..\\CoreInfrastructure\\UserLoginRepository.cs",
               "ToolTip": "D:\\PortalSystem\\CoreInfrastructure\\UserLoginRepository.cs",
               "RelativeToolTip": "..\\CoreInfrastructure\\UserLoginRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCAAAAAhAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBgAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-15T12:47:49.96Z"
+              "WhenOpened": "2024-04-15T12:47:49.96Z",
+              "EditorCaption": ""
             }
           ]
         }

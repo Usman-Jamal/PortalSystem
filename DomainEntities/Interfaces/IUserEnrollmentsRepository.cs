@@ -12,5 +12,6 @@ namespace DomainEntities.Interfaces
         List<Users> GetUserByClassId (int class_id);
         void EnrollUser(UserEnrollments userEnrollments);
         void DeleteEnrollment(int user_id, int class_id);
+        string isUserEnrolled(int user_id, int class_id);
     }
 }

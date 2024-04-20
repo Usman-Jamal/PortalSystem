@@ -1,0 +1,78 @@
+<div class="display">
+    <div class="action-buttons">
+        <Button class="addbutton" (click)="openForm()"><span class="material-symbols-outlined"> person_add </span> <strong> ADD NEW CLASS </strong></Button>
+    </div>
+    <div class="popup-form" *ngIf="isAddFormVisible">
+        <form (ngSubmit)="submitForm()" #classForm="ngForm">
+            <h3>ADD NEW CLASS</h3>
+            <label for="gradeLevel">Grade Level</label>
+            <select id = "gradeLevel" name="gradeLevel" required>
+                <option value="null" disabled selected>--Select Grade Level--</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+                <option value="8th">8th</option>
+                <option value="9th">9th</option>
+                <option value="10th">10th</option>
+                <option value="11th">11th</option>
+                <option value="12th">12th</option>
+                <option value="13th">13th</option>
+                <option value="14th">14th</option>
+                <option value="15th">15th</option>
+            </select>    
+            <label for="timings">Timings</label>
+            <select id = "timings" name="timings" required>
+                <option value="null" disabled selected>--Select Time Slot--</option>
+                <option value="8:00AM to 10:00AM">8:00AM to 10:00AM</option>
+                <option value="10:00AM to 12:00PM">10:00AM to 12:00PM</option>
+                <option value="12:00PM to 02:00PM">12:00PM to 02:00PM</option>
+                <option value="02:00PM to 04:00PM">02:00PM to 04:00PM</option>
+                <option value="04:00PM to 06:00PM">04:00PM to 06:00PM</option>
+            </select>
+    
+            <label for="maxClassSize">Max Class Size</label>
+            <select id = "maxClassSize" name="maxClassSize" required>
+                <option value="null"disabled selected>--Select Class Size--</option>
+                <option value="10">10</option>
+                <option value="15">15</option>
+                <option value="20">20</option>
+                <option value="25">25</option>
+                <option value="30">30</option>
+            </select>
+    
+            <div class="formButtons">
+                <button type="submit">Submit</button>
+                <button type="button" (click)="cancelForm()">Cancel</button>
+            </div>
+        </form>
+    </div>
+    <table *ngIf="!this.classes || this.classes.length === 0">
+        <tbody>
+            <tr>
+                <td colspan="8"><h4>No Record Found</h4></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Grade Level</th>
+                <th>Timings</th>
+                <th>Max Class Size</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of this.classes let i = index">
+                <td>{{i + 1}}</td>
+                <td>{{item.gradeLevel}}</td>
+                <td>{{item.timings}}</td>
+                <td>{{item.maxClassSize}}</td>
+                <td class="action-buttons">
+                    <Button class="deleteButton" (click)="deleteClass(item.id)"><span class="material-symbols-outlined"> delete </span></Button>                       
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

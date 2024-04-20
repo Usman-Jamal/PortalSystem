@@ -1,0 +1,14 @@
+<div class="form-container">
+    <p class="title">LOG IN</p>
+    <form class="form">
+      <input type="email" class="input" id="email" name="email" placeholder="Email" required>
+      <input type="text" class="input" id="password" name="email" placeholder="Password" required>
+      <p class="page-link">
+        <span class="page-link-label">Forgot Password?</span>
+      </p>
+      <button class="form-btn" (click)="submitForm()">Log in</button>
+    </form>
+    <p class="sign-up-label">
+      Don't have an account?<span class="sign-up-link"><a routerLink="/userregistrationpage">Sign up</a></span>
+    </p>
+  </div>

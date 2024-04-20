@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpPost]
-        public bool UserLogin(string email, string password)
+        public Users UserLogin(string email, string password)
         {
             return _repository.UserLogin(email, password);
         }
